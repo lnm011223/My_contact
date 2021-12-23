@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/contact_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="144dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#3EB06A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contact_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contact_phone"
+
+        android:layout_width="199dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contact_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/contact_name" />
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contact_phone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        />
+
+    <ImageView
+
+        android:id="@+id/message_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
